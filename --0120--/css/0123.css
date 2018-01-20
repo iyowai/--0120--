@@ -1,0 +1,106 @@
+
+/*OOCSS
+*/
+/*導覽列 */
+.navbar{
+	width: 100%;
+	height: 64%;
+}
+
+/*導覽列 */
+
+.navbar-dark{
+background-color: #fff;
+
+}
+
+.mb-8{margin-bottom: 8px; }
+.mb-16{margin-bottom: 16px;}
+.mb-32{margin-bottom: 32px;}
+.hidden{margin-bottom: none;}
+/********************/
+/*SMACSS
+*/
+/*bass-連結的初始化設定、最原始的設定*/
+a{}
+a:hover{}
+ul{}
+h1,h2,h3,h4,h5,h6{}
+
+/*layout-布局、最大的框架*/
+.row{}
+.col{}
+.container{}
+.header{}
+.footer{}
+
+/*Module-包含我們寫過的任何元件*/
+.nacbar{}
+.jumbortron{}
+.list{}
+.form{}
+.card{}
+
+/*State-描述狀態*/
+.hidden{}
+.is-hidden{}
+.active{}
+.is-hover{}
+
+/*Theme-主題、把主題拆出來（OOCSS的概念）
+、加一個主題，把外觀樣式抽出來寫*/
+.theme-white{}
+.theme-dark{}
+.theme-v1{}
+.theme-v2{}
+
+/*****************/
+
+/* 
+--------BEM ------
+
+Block- 在任何地方都能夠獨立存在
+Element-　block存在　　他才存在
+*/
+
+/*nav*/
+.nav{
+	background-color: orange;
+	display: inline-block;
+	vertical-align: top;
+	height: 64px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav_item{
+	float: left;
+	line-height: 64px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+/*navbar*/
+.navbar{
+	background-color: #fff;
+	width: 100%;
+	height: 64px;
+	border: 1px solid;
+}
+.navbar_logo{
+	display: inline-block;
+	width: 120px;
+	height: 64px;
+	background-color: grey;
+
+}
+.navbar_nav{
+	float: right;
+}
+
+
+
+.search-form_input{}
+
+.btn{}
+.btn--lg{}
